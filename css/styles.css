@@ -8,6 +8,7 @@
     --background-color-main: #84CFE4;
     --background-color-secondary: #F2F3F5;
     --background-color-terciary: #C8CAC7;
+    --color-shadow: #72B6C3;
     --color-main: #4E5462;
     --color-secondary: #6B7C8C;
     --color-terciary: #EF4136;
@@ -48,4 +49,14 @@ body {
 
 .content {
     flex: 1;
+}
+
+.body-calculator {
+    border: solid black;
+    border-radius: 1em;
+    box-shadow: 10px 10px 10px 10px var(--color-shadow);
+    width: 25%;
+    height: 75%;
+    margin: 0 auto;
+    background-color: var(--background-color-secondary);
 }
