@@ -52,11 +52,35 @@ body {
 }
 
 .body-calculator {
-    border: solid black;
     border-radius: 1em;
     box-shadow: 10px 10px 10px 10px var(--color-shadow);
     width: 25%;
     height: 75%;
     margin: 0 auto;
     background-color: var(--background-color-secondary);
+    overflow: hidden;
+}
+
+.top {
+    background-color: var(--color-main);
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    background-color: var(--background-color-terciary);
+    width: 85%;
+    height: 55%;
+    border: solid #5e6b7b 6px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.values {
+    font-size: 2em;
+    font-weight: 700;
 }
