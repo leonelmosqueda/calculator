@@ -54,7 +54,7 @@ body {
 .body-calculator {
     border-radius: 1em;
     box-shadow: 10px 10px 10px 10px var(--color-shadow);
-    width: 25em;
+    width: 24em;
     height: 30em;
     margin: 0 auto;
     background-color: var(--background-color-secondary);
@@ -71,8 +71,8 @@ body {
 
 .display {
     background-color: var(--background-color-terciary);
-    width: 85%;
-    height: 55%;
+    width: 86%;
+    height: 65%;
     border: solid #5e6b7b 6px;
     display: flex;
     justify-content: end;
@@ -89,12 +89,12 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5em;
-    margin: 2em 0 0.5em 0.6em;
+    margin: 2em 0 1em 0.9em;
 }
 
 .button {
-    height: 3.5em;
-    width: 5em;
+    height: 3.3em;
+    width: 4.5em;
     border: none;
     border-radius: 0.5em;
     font-size: 1em;
