@@ -54,8 +54,8 @@ body {
 .body-calculator {
     border-radius: 1em;
     box-shadow: 10px 10px 10px 10px var(--color-shadow);
-    width: 25%;
-    height: 75%;
+    width: 25em;
+    height: 30em;
     margin: 0 auto;
     background-color: var(--background-color-secondary);
     overflow: hidden;
@@ -83,4 +83,40 @@ body {
 .values {
     font-size: 2em;
     font-weight: 700;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+    margin: 2em 0 0.5em 0.6em;
+}
+
+.button {
+    height: 3.5em;
+    width: 5em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: var(--color-secondary);
+    color: var(--color-text-main);
+}
+
+.secondary {
+    background-color: var(--color-main);
+    color: var(--color-text-main);
+}
+
+.clear {
+    background-color: var(--color-terciary);
+    color: var(--color-text-main);
+}
+
+.button:hover {
+    border: solid var(--color-text-secondary);
 }
