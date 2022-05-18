@@ -9,38 +9,33 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    <header class="header"><h1 class="title">CALCULATOR</h1></header>
-    <main class="content">
-        <div class="body-calculator">
-            <div class="top">
-                <div class="display">
-                    <span id="display" class="values"></span>
-                </div>
-            </div>
-            <div class="buttons">
-                <button class="button clear">C</button>
-                <button class="button secondary">CE</button>
-                <button class="button secondary">X!</button>
-                <button class="button secondary">%</button>
-                <button class="button primary">7</button>
-                <button class="button primary">8</button>
-                <button class="button primary">9</button>
-                <button class="button secondary">÷</button>
-                <button class="button primary">4</button>
-                <button class="button primary">5</button>
-                <button class="button primary">6</button>
-                <button class="button secondary">x</button>
-                <button class="button primary">1</button>
-                <button class="button primary">2</button>
-                <button class="button primary">3</button>
-                <button class="button secondary">-</button>
-                <button class="button primary">0</button>
-                <button class="button primary">.</button>
-                <button class="button primary">=</button>
-                <button class="button secondary">+</button>
+    <div class="calculator-container">
+        <div class="top">
+            <div class="display">
+                <div class="previous-operand"></div>
+                <div class="current-operand"></div>
             </div>
         </div>
-    </main>
-    <footer class="footer">By M.Dot13</footer>
+        <div class="button-grid">
+            <button class="btn-ac span-two">AC</button>
+            <button class="btn-delete">DEL</button>
+            <button class="btn-operator">÷</button>
+            <button class="btn-number">7</button>
+            <button class="btn-number">8</button>
+            <button class="btn-number">9</button>
+            <button class="btn-operator">x</button>
+            <button class="btn-number">4</button>
+            <button class="btn-number">5</button>
+            <button class="btn-number">6</button>
+            <button class="btn-operator">-</button>
+            <button class="btn-number">1</button>
+            <button class="btn-number">2</button>
+            <button class="btn-number">3</button>
+            <button class="btn-operator">+</button>
+            <button class="btn-number">.</button>
+            <button class="btn-number">0</button>
+            <button class="btn-equal span-two">=</button>
+        </div>
+    </div>
 </body>
 </html>

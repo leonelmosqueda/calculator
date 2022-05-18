@@ -3,7 +3,8 @@
     src: url('../assets/digital.TTF');
 }
 
-* {
+*, *::before, *::after {
+    font-family: roboto, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,44 +20,20 @@
     --color-terciary: #EF4136;
     --color-text-main: #EDF2F4;
     --color-text-secondary: #000814;
+    --color-text-secondary-light: rgba(0, 8, 20, .75);
 }
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100vh;
     overflow: hidden;
-    font-family: roboto, sans-serif;
     background-color: var(--background-color-main);
     color: var(--color-text-secondary);
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-    background-color: var(--color-terciary);
-    color: var(--color-text-main);
-    box-shadow: 0 -10px 15px 10px var(--color-terciary);
-}
-
-.title {
-    font-size: 2em;
-    font-weight: 800;
-}
-
-.content {
-    flex: 1;
-}
-
-.body-calculator {
+.calculator-container {
     border-radius: 1em;
     box-shadow: 10px 10px 10px 10px var(--color-shadow);
     width: 24em;
@@ -80,25 +57,37 @@ body {
     height: 65%;
     border: solid #5e6b7b 6px;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
     padding-right: 1em;
-}
-
-.values {
+    overflow: hidden;
+    white-space: nowrap;
     font-family: digital, sans-serif;
-    font-size: 2.5em;
-    font-weight: 700;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5em;
-    margin: 2em 0 1em 0.9em;
+.previous-operand {
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: var(--color-text-secondary-light);
 }
 
-.button {
+.current-operand {
+    font-family: inherit;
+    font-size: 2.5rem;
+    color: var(--color-text-secondary);
+}
+
+.button-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
+}
+
+.button-grid button {
     height: 3.3em;
     width: 4.5em;
     border: none;
@@ -108,21 +97,31 @@ body {
     cursor: pointer;
 }
 
-.primary {
+.button-grid button:hover {
+    border: solid var(--color-text-secondary);
+}
+
+.btn-number,
+.btn-equal {
     background-color: var(--color-secondary);
     color: var(--color-text-main);
 }
 
-.secondary {
+.btn-operator {
     background-color: var(--color-main);
     color: var(--color-text-main);
 }
 
-.clear {
+.btn-ac,
+.btn-delete {
     background-color: var(--color-terciary);
     color: var(--color-text-main);
 }
 
 .button:hover {
     border: solid var(--color-text-secondary);
+}
+
+.button-grid .span-two {
+    width: 10em;
 }
